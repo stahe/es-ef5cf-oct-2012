@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://stahe.github.io/es-ef5cf-oct-2012/caso-practico-con-firebird-21.html">
       
       
-        <link rel="prev" href="caso-practico-con-postgresql-921.html">
+        <link rel="prev" href="caso-practico-con--postgresql-921.html">
       
       
         <link rel="next" href="conclusion.html">
@@ -56,6 +56,8 @@
     
     
       <link rel="stylesheet" href="stylesheets/focus.css">
+    
+      <link rel="stylesheet" href="stylesheets/bidi.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -330,14 +332,14 @@
   
   
     <li class="md-nav__item">
-      <a href="--un-caso-practico.html" class="md-nav__link">
+      <a href="el--estudio-de-caso.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    2.  : un caso práctico
+    2. El : estudio de caso
   
 
     
@@ -357,14 +359,14 @@
   
   
     <li class="md-nav__item">
-      <a href="estudio-de-caso-con-sql-server-express-2012.html" class="md-nav__link">
+      <a href="caso-practico-con-sql-server-express-2012.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    3. Estudio de caso con SQL Server Express 2012
+    3. Caso práctico con SQL Server Express 2012
   
 
     
@@ -438,14 +440,14 @@
   
   
     <li class="md-nav__item">
-      <a href="caso-practico-con-postgresql-921.html" class="md-nav__link">
+      <a href="caso-practico-con--postgresql-921.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    6. Caso práctico con PostgreSQL 9.2.1
+    6. Caso práctico con  PostgreSQL 9.2.1
   
 
     
@@ -536,10 +538,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#72-creacion-de-la-base-de-datos-a-partir-de-las-entidades" class="md-nav__link">
+  <a href="#72-creacion-de-la-base-a-partir-de-las-entidades" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7.2. Creación de la base de datos a partir de las entidades
+        7.2. Creación de la base a partir de las entidades
       
     </span>
   </a>
@@ -612,85 +614,107 @@
   
 
 
-<p><a id="refheading39705804107930-copie-1"></a>
-<a id="refheading39719804107930-copie-1"></a>
-<a id="refheading39733804107930-copie-1"></a>
-<a id="refheading39797804107930-copie-1"></a>
-<a id="refheading39807804107930-copie-1"></a>
-<a id="refheading39815804107930-copie-1"></a>
-<a id="refheading39823804107930"></a></p>
+<p><span id="refheading39823804107930" name="refheading39823804107930" class="odt-bookmark-anchor"></span></p>
 <h1 id="7-caso-practico-con-firebird-21">7. <span style="color: #365f91">Caso práctico con Firebird 2.1</span></h1>
-<p><a id="refheading39825804107930"></a></p>
+<p><span id="refheading39825804107930" name="refheading39825804107930" class="odt-bookmark-anchor"></span></p>
 <h2 id="71-instalacion-de-las-herramientas">7.1. <span style="color: #4f81bd">Instalación de las herramientas</span></h2>
 <p><span style="color: #000000">Las herramientas que hay que instalar son las siguientes:</span></p>
-<ul>
-<li>el SGBD: [http://www.firebirdsql.org/en/firebird-2-1-5/];</li>
-<li>una herramienta de administración: EMS SQL Manager for InterBase/Firebird Freeware [http://www.sqlmanager.net/fr/products/ibfb/manager/download].</li>
-</ul>
+<ol>
+  <li>SGBD: [http://www.firebirdsql.org/en/firebird-2-1-5/];
+  </li>
+  <li>una herramienta de administración: EMS SQL Manager for InterBase/Firebird Freeware [http://www.sqlmanager.net/fr/products/ibfb/manager/download].
+  </li>
+</ol>
+
 <p><span style="color: #000000">En los siguientes ejemplos, el usuario es </span><strong><span style="color: #000000">sysdba </span></strong><span style="color: #000000">con la contraseña </span><strong><span style="color: #000000">masterkey</span></strong><span style="color: #000000">.</span></p>
-<p><span style="color: #000000">Iniciemos Firebird y, a continuación, la herramienta [SQL Manager Lite for Firebird], que utilizaremos para administrar el DBMS.</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000489000001BC320028A9.png" width="581" height="222" style="display:inline-block; margin:4px;width:15.36cm;height:5.874cm;" class="odt-zoomable" data-zoom-src="images/1000000000000489000001BC320028A9.png" /></td></tr></table>
+<p><span style="color: #000000">Iniciamos Firebird y, a continuación, la herramienta [SQL Manager Lite for Firebird], con la que administraremos SGBD.</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000489000001BC320028A9.png" width="581" height="222" style="display:inline-block; margin:4px;width:15.36cm;height:5.874cm;" class="odt-zoomable" data-zoom-src="images/1000000000000489000001BC320028A9.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">En [1], iniciamos el SGBD Firebird desde el menú Inicio. En este caso, el SGBD no se ha instalado como servicio de Windows;</span></li>
-<li><span style="color: #000000">en [2], se inicia el servicio. Aparece un icono en la esquina inferior derecha de la pantalla. Al hacer clic con el botón derecho del ratón sobre él, se puede detener el SGBD.</span></li>
+  <li><span style="color: #000000">En [1], iniciamos el SGBD Firebird desde el menú Inicio. Aquí, el SGBD no se ha instalado como un servicio de Windows;</span>
+  </li>
+  <li><span style="color: #000000">en [2], el servicio se ha iniciado. Se ha instalado un icono en la parte inferior derecha de la pantalla. Con un clic derecho sobre él, se puede detener el SGBD.</span>
+  </li>
 </ul>
-<p><span style="color: #000000">Ahora iniciamos la herramienta [SQL Manager Lite for Firebird], que utilizaremos para administrar el SGBD [3].</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006280000022311E20850.png" width="680" height="236" style="display:inline-block; margin:4px;width:17.999cm;height:6.248cm;" class="odt-zoomable" data-zoom-src="images/10000000000006280000022311E20850.png" /></td></tr></table>
+
+<p><span style="color: #000000">Ahora iniciamos la herramienta [SQL Manager Lite for Firebird] con la que vamos a administrar SGBD y [3].</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000006280000022311E20850.png" width="680" height="236" style="display:inline-block; margin:4px;width:17.999cm;height:6.248cm;" class="odt-zoomable" data-zoom-src="images/10000000000006280000022311E20850.png" /></td></tr></table>
+
+<ol>
+  <li><span style="color: #000000">En [4], creamos una nueva base;</span>
+  </li>
+  <li><span style="color: #000000">en [5], aceptamos;</span>
+  </li>
+</ol>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005FF0000025D783ECCE2.png" width="680" height="268" style="display:inline-block; margin:4px;width:17.999cm;height:7.094cm;" class="odt-zoomable" data-zoom-src="images/10000000000005FF0000025D783ECCE2.png" /></td></tr></table>
+
+<ol>
+  <li><span style="color: #000000">en [5], nos conectamos como SYSDBA / masterkey;</span>
+  </li>
+  <li><span style="color: #000000">en [6], se indica la ubicación del archivo que se va a crear. De hecho, la base de datos se creará en un único archivo;</span>
+  </li>
+  <li><span style="color: #000000">en [7], se valida la orden SQL que se va a ejecutar;</span>
+  </li>
+</ol>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000006360000023C89BCF940.png" width="680" height="245" style="display:inline-block; margin:4px;width:17.999cm;height:6.475cm;" class="odt-zoomable" data-zoom-src="images/10000000000006360000023C89BCF940.png" /></td></tr></table>
+
+<ol>
+  <li><span style="color: #000000">en [8], se ha creado la base de datos. Ahora debe guardarse en [EMS Manager]. La información es correcta. Se ejecuta [OK];</span>
+  </li>
+  <li><span style="color: #000000">en [9], nos conectamos a ella;</span>
+  </li>
+  <li><span style="color: #000000">En [10], [EMS Manager] muestra la base de datos, que por ahora está vacía.</span>
+  </li>
+</ol>
+
+<p><span style="color: #000000">Ahora vamos a conectar un proyecto VS 2012 a esta base.</span></p>
+<p><span id="refheading39827804107930" name="refheading39827804107930" class="odt-bookmark-anchor"></span></p>
+<h2 id="72-creacion-de-la-base-a-partir-de-las-entidades">7.2. <span style="color: #4f81bd">Creación de la base a partir de las entidades</span></h2>
+<p><span style="color: #000000">Empezamos duplicando la carpeta del proyecto [RdvMedecins-SqlServer-01] en [RdvMedecins-Firebird-01] [1]:</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000059E00000313F7EE85CB.png" width="680" height="372" style="display:inline-block; margin:4px;width:17.999cm;height:9.851cm;" class="odt-zoomable" data-zoom-src="images/100000000000059E00000313F7EE85CB.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">En [4], creamos una nueva base de datos;</span></li>
-<li><span style="color: #000000">En [5], lo confirmamos;</span></li>
+  <li><span style="color: #000000">en [2], en VS 2012, eliminamos el proyecto [RdvMedecins-SqlServer-01] de la solución;</span>
+  </li>
 </ul>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005FF0000025D783ECCE2.png" width="680" height="268" style="display:inline-block; margin:4px;width:17.999cm;height:7.094cm;" class="odt-zoomable" data-zoom-src="images/10000000000005FF0000025D783ECCE2.png" /></td></tr></table>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000061E0000028F52A98BEE.png" width="680" height="285" style="display:inline-block; margin:4px;width:17.999cm;height:7.528cm;" class="odt-zoomable" data-zoom-src="images/100000000000061E0000028F52A98BEE.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">En [5], iniciamos sesión como SYSDBA / masterkey;</span></li>
-<li><span style="color: #000000">En [6], especifique la ubicación del archivo que se va a crear. La base de datos se creará como un único archivo;</span></li>
-<li><span style="color: #000000">En [7], validamos la instrucción SQL que se va a ejecutar;</span></li>
+  <li><span style="color: #000000">en [3], el proyecto se ha eliminado;</span>
+  </li>
+  <li><span style="color: #000000">en [4], añadimos otro. Este se encuentra en la carpeta [RdvMedecins-Firebird-01] que hemos creado anteriormente;</span>
+  </li>
 </ul>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006360000023C89BCF940.png" width="680" height="245" style="display:inline-block; margin:4px;width:17.999cm;height:6.475cm;" class="odt-zoomable" data-zoom-src="images/10000000000006360000023C89BCF940.png" /></td></tr></table>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000032A0000014F0BB08346.png" width="405" height="168" style="display:inline-block; margin:4px;width:10.716cm;height:4.433cm;" class="odt-zoomable" data-zoom-src="images/100000000000032A0000014F0BB08346.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">En [8], la base de datos ya se ha creado. Ahora debe registrarse en [EMS Manager]. La información es correcta. Haga clic en [Aceptar];</span></li>
-<li><span style="color: #000000">En [9], inicie sesión en ella;</span></li>
-<li><span style="color: #000000">En [10], [EMS Manager] muestra la base de datos, que actualmente está vacía.</span></li>
+  <li><span style="color: #000000">en [5], el proyecto cargado se llama [RdvMedecins-SqlServer-01];</span>
+  </li>
+  <li><span style="color: #000000">en [6], cambiamos su nombre a [RdvMedecins-Firebird-01]</span>
+  </li>
 </ul>
-<p><span style="color: #000000">Ahora conectaremos un proyecto de VS 2012 a esta base de datos.</span></p>
-<p><a id="refheading39827804107930"></a></p>
-<h2 id="72-creacion-de-la-base-de-datos-a-partir-de-las-entidades">7.2. <span style="color: #4f81bd"><span style="color: #4f81bd">Creación de la base de datos a partir de las entidades</span></span></h2>
-<p><span style="color: #000000">Comenzamos duplicando la carpeta del proyecto [RdvMedecins-SqlServer-01] en [RdvMedecins-Firebird-01] [1]:</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000059E00000313F7EE85CB.png" width="680" height="372" style="display:inline-block; margin:4px;width:17.999cm;height:9.851cm;" class="odt-zoomable" data-zoom-src="images/100000000000059E00000313F7EE85CB.png" /></td></tr></table>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005F00000023FF2CB05B4.png" width="680" height="257" style="display:inline-block; margin:4px;width:17.999cm;height:6.809cm;" class="odt-zoomable" data-zoom-src="images/10000000000005F00000023FF2CB05B4.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">en [2], en VS 2012, eliminamos el proyecto [RdvMedecins-SqlServer-01] de la solución;</span></li>
+  <li><span style="color: #000000">en [7], añadimos otro proyecto a la solución. Este se encuentra en la carpeta [RdvMedecins-SqlServer-01] del proyecto que hemos  eliminado de la solución anteriormente;</span>
+  </li>
+  <li><span style="color: #000000">en [8], el proyecto [RdvMedecins-SqlServer-01] se ha reintegrado a la solución.</span>
+  </li>
 </ul>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000061E0000028F52A98BEE.png" width="680" height="285" style="display:inline-block; margin:4px;width:17.999cm;height:7.528cm;" class="odt-zoomable" data-zoom-src="images/100000000000061E0000028F52A98BEE.png" /></td></tr></table>
 
-<ul>
-<li><span style="color: #000000">en [3], el proyecto se ha eliminado;</span></li>
-<li><span style="color: #000000">en [4], añadimos otro. Este lo tomamos de la carpeta [RdvMedecins-Firebird-01] que creamos anteriormente;</span></li>
-</ul>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000032A0000014F0BB08346.png" width="405" height="168" style="display:inline-block; margin:4px;width:10.716cm;height:4.433cm;" class="odt-zoomable" data-zoom-src="images/100000000000032A0000014F0BB08346.png" /></td></tr></table>
-
-<ul>
-<li><span style="color: #000000">En [5], el proyecto cargado se llama [RdvMedecins-SqlServer-01];</span></li>
-<li><span style="color: #000000">En [6], cambiamos su nombre a [RdvMedecins-Firebird-01]</span></li>
-</ul>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005F00000023FF2CB05B4.png" width="680" height="257" style="display:inline-block; margin:4px;width:17.999cm;height:6.809cm;" class="odt-zoomable" data-zoom-src="images/10000000000005F00000023FF2CB05B4.png" /></td></tr></table>
-
-<ul>
-<li><span style="color: #000000">en [7], añadimos otro proyecto a la solución. Este proyecto se toma de la carpeta [RdvMedecins-SqlServer-01] del proyecto que eliminamos anteriormente de la solución;</span></li>
-<li><span style="color: #000000">en [8], el proyecto [RdvMedecins-SqlServer-01] se ha vuelto a añadir a la solución.</span></li>
-</ul>
-<p><span style="color: #000000">El proyecto [RdvMedecins-Firebird-01] es idéntico al proyecto [RdvMedecins-SqlServer-01]. Tenemos que realizar algunos cambios. En [App.config], modificaremos la cadena de conexión y el [DbProviderFactory], que deben adaptarse a cada SGBD.</span></p>
-<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
-<span class="odt-code-line"><span class="odt-code-line-content">&lt;!-- connection chain on base --&gt;</span></span>
+<p><span style="color: #000000">El proyecto [RdvMedecins-Firebird-01] es idéntico al proyecto [RdvMedecins-SqlServer-01]. Tenemos que realizar algunas modificaciones. En [App.config], vamos a modificar la cadena de conexión y el [DbProviderFactory], que debemos adaptar a cada SGBD.</span></p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;!-- cadena de conexión en la base --&gt;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">  &lt;</span><span style="color:#a31515">connectionStrings</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">    &lt;</span><span style="color:#a31515">add</span><span style="color:#0000ff"> </span><span style="color:#ff0000">name</span><span style="color:#0000ff">=</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">monContexte</span><span style="color:#000000">&quot;</span><span style="color:#0000ff"> </span><span style="color:#ff0000">connectionString</span><span style="color:#0000ff">=</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">User=SYSDBA;Password=masterkey;Database=D:\data\istia-1213\c#\dvp\Entity Framework\databases\firebird\RDVMEDECINS-EF.GDB;DataSource=localhost;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=15;Pooling=true;MinPoolSize=0;MaxPoolSize=50;Packet Size=8192;ServerType=0;</span><span style="color:#000000">&quot;</span><span style="color:#0000ff"> </span><span style="color:#ff0000">providerName</span><span style="color:#0000ff">=</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">FirebirdSql.Data.FirebirdClient</span><span style="color:#000000">&quot;</span><span style="color:#0000ff"> /&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">  &lt;/</span><span style="color:#a31515">connectionStrings</span><span style="color:#0000ff">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#0000ff">&lt;!-- the factory provider --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#0000ff">&lt;!-- el proveedor de la fábrica --&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">  &lt;</span><span style="color:#a31515">system.data</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">    &lt;</span><span style="color:#a31515">DbProviderFactories</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">      &lt;</span><span style="color:#a31515">add</span><span style="color:#0000ff"> </span><span style="color:#ff0000">name</span><span style="color:#0000ff">=</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">Firebird Client Data Provider</span><span style="color:#000000">&quot;</span><span style="color:#0000ff"> </span><span style="color:#ff0000">invariant</span><span style="color:#0000ff">=</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">FirebirdSql.Data.FirebirdClient</span><span style="color:#000000">&quot;</span><span style="color:#0000ff"> </span><span style="color:#ff0000">description</span><span style="color:#0000ff">=</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">.Net Framework Data Provider for Firebird</span><span style="color:#000000">&quot;</span><span style="color:#0000ff"> </span><span style="color:#ff0000">type</span><span style="color:#0000ff">=</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">FirebirdSql.Data.FirebirdClient.FirebirdClientFactory, FirebirdSql.Data.FirebirdClient, Version=2.7.7.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c</span><span style="color:#000000">&quot;</span><span style="color:#0000ff"> /&gt;</span></span></span>
@@ -698,23 +722,32 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">  &lt;/</span><span style="color:#a31515">system.data</span><span style="color:#0000ff">&gt;</span></span></span>
 </code></pre></div>
 
-<ul>
-<li><span style="color: #000000">línea 3: el nombre de usuario y la contraseña, así como la ruta completa a la base de datos Firebird;</span></li>
-<li><span style="color: #000000">Líneas 8–10: </span><em>DbProviderFactory</em><span style="color: #000000">. La línea 9 hace referencia a una DLL [</span><span style="color: #0000ff">FirebirdSql.Data.FirebirdClient</span><span style="color: #000000">] que no tenemos. Podemos obtenerla mediante NuGet [1]:</span></li>
-</ul>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006150000011CB024F99D.png" width="680" height="124" style="display:inline-block; margin:4px;width:17.999cm;height:3.283cm;" class="odt-zoomable" data-zoom-src="images/10000000000006150000011CB024F99D.png" /></td></tr></table>
+<ol>
+  <li><span style="color: #000000">línea 3: el usuario y su contraseña, así como la ruta completa de la base de datos Firebird;</span>
+  </li>
+  <li><span style="color: #000000">líneas 8-10: el </span><i>DbProviderFactory</i><span style="color: #000000">. La línea 9 hace referencia a un DLL [FirebirdSql.Data.FirebirdClient] que no tenemos. Lo obtenemos con NuGet [1]:</span>
+  </li>
+</ol>
 
-<ul>
-<li><span style="color: #000000">en [2], escribe la palabra clave </span><em>«firebird»</em> <span style="color: #000000">en el cuadro de búsqueda;</span></li>
-<li><span style="color: #000000">en [3], seleccione el paquete [Firebird ADO.NET Data Provider]. Se trata de un conector ADO.NET para Firebird;</span></li>
-</ul>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000041C000002721D31ED68.png" width="526" height="313" style="display:inline-block; margin:4px;width:13.917cm;height:8.281cm;" class="odt-zoomable" data-zoom-src="images/100000000000041C000002721D31ED68.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000006150000011CB024F99D.png" width="680" height="124" style="display:inline-block; margin:4px;width:17.999cm;height:3.283cm;" class="odt-zoomable" data-zoom-src="images/10000000000006150000011CB024F99D.png" /></td></tr></table>
 
-<ul>
-<li><span style="color: #000000">en [4], la nueva referencia;</span></li>
-<li><span style="color: #000000">en [5], en [App.config], debes especificar la versión correcta del archivo DLL. La encontrarás en sus propiedades.</span></li>
-</ul>
-<p><span style="color: #000000">En el archivo [Entities.cs], debe adaptar el esquema de las tablas que se generarán:</span></p>
+<ol>
+  <li><span style="color: #000000">en [2], en el campo de búsqueda se escribe la palabra clave </span><i>firebird</i><span style="color: #000000">;</span>
+  </li>
+  <li><span style="color: #000000">en [3], se elige el paquete [Firebird ADO.NET Data Provider]. Es un conector ADO.NET para Firebird;</span>
+  </li>
+</ol>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000041C000002721D31ED68.png" width="526" height="313" style="display:inline-block; margin:4px;width:13.917cm;height:8.281cm;" class="odt-zoomable" data-zoom-src="images/100000000000041C000002721D31ED68.png" /></td></tr></table>
+
+<ol>
+  <li><span style="color: #000000">en [4], la nueva referencia;</span>
+  </li>
+  <li><span style="color: #000000">en [5], en [App.config], hay que poner el version correcto del DLL. Se encuentra en sus propiedades.</span>
+  </li>
+</ol>
+
+<p><span style="color: #000000">En el archivo [Entites.cs], hay que adaptar el esquema de las tablas que se van a generar:</span></p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
 <span class="odt-code-line"><span class="odt-code-line-content">  [<span style="color:#2b91af">Table</span>(<span style="color:#a31515">&quot;MEDECINS&quot;</span>)]</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#0000ff">class</span><span style="color:#000000"> </span><span style="color:#2b91af">Medecin</span><span style="color:#000000"> : </span><span style="color:#2b91af">Personne</span></span></span>
@@ -735,14 +768,18 @@
 
 <p><span style="color: #000000">Aquí, las tablas no tienen esquema.</span></p>
 <p><span style="color: #000000">Configuramos la ejecución del proyecto:</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000034B0000012B5D7C3ED0.png" width="422" height="150" style="display:inline-block; margin:4px;width:11.153cm;height:3.956cm;" class="odt-zoomable" data-zoom-src="images/100000000000034B0000012B5D7C3ED0.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000034B0000012B5D7C3ED0.png" width="422" height="150" style="display:inline-block; margin:4px;width:11.153cm;height:3.956cm;" class="odt-zoomable" data-zoom-src="images/100000000000034B0000012B5D7C3ED0.png" /></td></tr></table>
 
-<ul>
-<li><span style="color: #000000">en [1], le damos un nombre diferente al ensamblado que se generará;</span></li>
-<li><span style="color: #000000">en [2], también especificamos un espacio de nombres predeterminado diferente;</span></li>
-<li><span style="color: #000000">en [3], especificamos el programa que se va a ejecutar.</span></li>
-</ul>
-<p><span style="color: #000000">En esta fase, no hay errores de compilación. Ejecutemos el programa [CreateDB_01]. Obtenemos la siguiente excepción:</span></p>
+<ol>
+  <li><span style="color: #000000">en [1], le damos otro nombre al ensamblado que se va a generar;</span>
+  </li>
+  <li><span style="color: #000000">en [2], así como otro espacio de nombres por defecto;</span>
+  </li>
+  <li><span style="color: #000000">en [3], se designa el programa que se va a ejecutar.</span>
+  </li>
+</ol>
+
+<p><span style="color: #000000">En este punto, no hay errores de compilación. Ejecutemos el programa [CreateDB_01]. Se produce la siguiente excepción:</span></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
@@ -763,64 +800,72 @@
 <a id="__codelineno-0-9" name="__codelineno-0-9"></a>   à RdvMedecins_01.CreateDB_01.Main(String[] args) dans d:\data\istia-1213\c#\d
 <a id="__codelineno-0-10" name="__codelineno-0-10"></a>vp\Entity Framework\RdvMedecins\RdvMedecins-Oracle-01\CreateDB_01.cs:ligne 15
 </code></pre></div></td></tr></table></div>
-<p><span style="color: #000000">Recordamos haber encontrado el mismo error con MySQL, Oracle y PostgreSQL. Esto está relacionado con el tipo del campo </span><em><span style="color: #000000">Timestamp </span></em><span style="color: #000000">en las entidades. Realizamos la misma modificación que con los dos SGBD anteriores. En las entidades, sustituimos las tres líneas</span></p>
-<div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
+<p><span style="color: #000000">Recordamos haber tenido el mismo error con MySQL, Oracle y PostgreSQL. Está relacionado con el tipo del campo </span><em><span style="color: #000000">Timestamp </span></em><span style="color: #000000">de las entidades. Realizamos la misma modificación que con los dos SGBD anteriores. En las entidades, sustituimos las tres líneas</span></p>
+<div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    [</span><span style="color:#2b91af">Column</span><span style="color:#000000">(</span><span style="color:#a31515">&quot;TIMESTAMP&quot;</span><span style="color:#000000">)]</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    [</span><span style="color:#2b91af">Timestamp</span><span style="color:#000000">]</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#0000ff">byte</span><span style="color:#000000">[] Timestamp { </span><span style="color:#0000ff">get</span><span style="color:#000000">; </span><span style="color:#0000ff">set</span><span style="color:#000000">; }</span></span></span>
 </code></pre></div>
 
-<p><span style="color: #000000"> con lo siguiente:</span></p>
-<div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
+<p><span style="color: #000000"> por las siguientes:</span></p>
+<div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    [</span><span style="color:#2b91af">ConcurrencyCheck</span><span style="color:#000000">]</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    [</span><span style="color:#2b91af">Column</span><span style="color:#000000">(</span><span style="color:#a31515">&quot;VERSIONING&quot;</span><span style="color:#000000">)]</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#2b91af">int</span><span style="color:#000000">? Versioning { </span><span style="color:#0000ff">get</span><span style="color:#000000">; </span><span style="color:#0000ff">set</span><span style="color:#000000">; }</span></span></span>
 </code></pre></div>
 
-<p><span style="color: #000000">Por lo tanto, cambiamos el tipo de columna de </span><strong><span style="color: #000000">byte[] </span></strong><span style="color: #000000">a </span><strong><span style="color: #000000">int?</span></strong><span style="color: #000000">. En el SGBD, utilizaremos procedimientos almacenados para incrementar este entero en uno cada vez que se inserte o modifique una fila.</span></p>
-<p><span style="color: #000000">Realizamos el cambio anterior en las cuatro entidades y, a continuación, volvemos a ejecutar la aplicación. Entonces obtenemos el siguiente error:</span></p>
+<p><span style="color: #000000">Por lo tanto, cambiamos el tipo de la columna, que pasa de </span><strong><span style="color: #000000">byte[] </span></strong><span style="color: #000000">a </span><strong><span style="color: #000000">int?</span></strong><span style="color: #000000">. En SGBD, utilizaremos procedimientos almacenados para incrementar este entero en una unidad cada vez que se inserte o modifique una fila.</span></p>
+<p><span style="color: #000000">Realizamos la modificación anterior para las cuatro entidades y, a continuación, volvemos a ejecutar la aplicación. Entonces obtenemos el siguiente error:</span></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
 <span class="normal"><a href="#__codelineno-1-2">2</a></span>
 <span class="normal"><a href="#__codelineno-1-3">3</a></span>
 <span class="normal"><a href="#__codelineno-1-4">4</a></span>
-<span class="normal"><a href="#__codelineno-1-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>Exception non gérée : FirebirdSql.Data.FirebirdClient.FbException: lock time-out on wait transaction object D:\DATA\ISTIA-1213\C#\DVP\ENTITY FRAMEWORK\DATABASES\FIREBIRD\RDVMEDECINS-EF.GDB is in use ---&gt; FirebirdSql.Data.Common.IscException: lock time-out on wait transaction
+<span class="normal"><a href="#__codelineno-1-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>Exception non gérée : FirebirdSql.Data.FirebirdClient.FbException: lock time-out on wait transaction object D:\DATA\ISTIA-1213\C#\DVP\ENTITY FRAMEWORK\DATABASES\FIREBIRD\RDVMEDECINS-EF.GDB está en uso ---&gt; FirebirdSql.Data.Common.IscException: lock time-out on wait transaction
 <a id="__codelineno-1-2" name="__codelineno-1-2"></a>object D:\DATA\ISTIA-1213\C#\DVP\ENTITY FRAMEWORK\DATABASES\FIREBIRD\RDVMEDECINS
 <a id="__codelineno-1-3" name="__codelineno-1-3"></a>-EF.GDB is in use
 <a id="__codelineno-1-4" name="__codelineno-1-4"></a>...
-<a id="__codelineno-1-5" name="__codelineno-1-5"></a>   à RdvMedecins_01.CreateDB_01.Main(String[] args) dans d:\data\istia-1213\c#\dvp\Entity Framework\RdvMedecins\RdvMedecins-Firebird-01\CreateDB_01.cs:ligne 15
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a>   à RdvMedecins_01.CreateDB_01.Main(String[] args) dans d:\data\istia-1213\c#\dp\Entity Framework\RdvMedecins\RdvMedecins-Firebird-01\CreateDB_01.cs:line 15
 </code></pre></div></td></tr></table></div>
-<p><span style="color: #000000">La línea 1 indica que la base de datos está en uso. No creo que fuera ese el caso, y no pude resolver este problema.</span></p>
-<p><span style="color: #000000">No importa. Crearemos la base de datos [RDVMEDECINS-EF] manualmente utilizando la herramienta [EMS Manager for Firebird]. No describiremos todos los pasos, sino solo los más importantes.</span></p>
-<p><span style="color: #000000">La base de datos Firebird tendrá la siguiente estructura:</span></p>
+<p><span style="color: #000000">La línea 1 indica que la base de datos está en uso. Me parece que no era así y no he conseguido resolver este problema.</span></p>
+<p><span style="color: #000000">No importa. Vamos a crear la base de datos [RDVMEDECINS-EF] manualmente con la herramienta [EMS Manager for Firebird]. No describiremos todos los pasos, sino solo los más importantes.</span></p>
+<p><span style="color: #000000">La base de datos Firebird será la siguiente:</span></p>
 <p><u><strong><span style="color: #000000">Las tablas</span></strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000046E000001663A187D89.png" width="567" height="179" style="display:inline-block; margin:4px;width:15.002cm;height:4.736cm;" class="odt-zoomable" data-zoom-src="images/100000000000046E000001663A187D89.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000046E000001663A187D89.png" width="567" height="179" style="display:inline-block; margin:4px;width:15.002cm;height:4.736cm;" class="odt-zoomable" data-zoom-src="images/100000000000046E000001663A187D89.png" /></td></tr></table>
 
-<ul>
-<li><span style="color: #000000">En [1], «ID» es una clave principal con el atributo «</span><em>Autoincrement</em><span style="color: #000000">». Será generada automáticamente por el SGBD;</span></li>
-</ul>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004770000016D067DD8E6.png" width="572" height="183" style="display:inline-block; margin:4px;width:15.122cm;height:4.83cm;" class="odt-zoomable" data-zoom-src="images/10000000000004770000016D067DD8E6.png" /></td></tr></table>
+<ol>
+  <li><span style="color: #000000">en [1], ID es una clave primaria con el atributo </span><i>Autoincrement</i><span style="color: #000000">. Se generará automáticamente mediante SGBD;</span>
+  </li>
+</ol>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000478000001E960B3B616.png" width="572" height="244" style="display:inline-block; margin:4px;width:15.134cm;height:6.468cm;" class="odt-zoomable" data-zoom-src="images/1000000000000478000001E960B3B616.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004770000016D067DD8E6.png" width="572" height="183" style="display:inline-block; margin:4px;width:15.122cm;height:4.83cm;" class="odt-zoomable" data-zoom-src="images/10000000000004770000016D067DD8E6.png" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000047A0000018BB7EFF31B.png" width="573" height="198" style="display:inline-block; margin:4px;width:15.161cm;height:5.226cm;" class="odt-zoomable" data-zoom-src="images/100000000000047A0000018BB7EFF31B.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000478000001E960B3B616.png" width="572" height="244" style="display:inline-block; margin:4px;width:15.134cm;height:6.468cm;" class="odt-zoomable" data-zoom-src="images/1000000000000478000001E960B3B616.png" /></td></tr></table>
 
-<p><span style="color: #000000">Las distintas tablas tienen las mismas claves primarias y externas que las de los ejemplos anteriores. Las claves externas tienen el atributo ON DELETE CASCADE.</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000047A0000018BB7EFF31B.png" width="573" height="198" style="display:inline-block; margin:4px;width:15.161cm;height:5.226cm;" class="odt-zoomable" data-zoom-src="images/100000000000047A0000018BB7EFF31B.png" /></td></tr></table>
+
+<p><span style="color: #000000">Las diferentes tablas tienen las claves primarias y externas que tenían estas mismas tablas en los ejemplos anteriores. Las claves externas tienen el atributo ON DELETE CASCADE.</span></p>
 <p><u><strong><span style="color: #000000">Los generadores</span></strong></u></p>
-<p><span style="color: #000000">Al igual que en Oracle y PostgreSQL, hemos creado generadores de números secuenciales. Hay 5 de ellos [1].</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000171000000DBF7C3425B.png" width="185" height="109" style="display:inline-block; margin:4px;width:4.882cm;height:2.896cm;" class="odt-zoomable" data-zoom-src="images/1000000000000171000000DBF7C3425B.png" /></td></tr></table>
+<p><span style="color: #000000">Al igual que con Oracle y PostgreSQL, hemos creado generadores de números consecutivos. Hay 5: [1].</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000171000000DBF7C3425B.png" width="185" height="109" style="display:inline-block; margin:4px;width:4.882cm;height:2.896cm;" class="odt-zoomable" data-zoom-src="images/1000000000000171000000DBF7C3425B.png" /></td></tr></table>
 
-<ul>
-<li><span style="color: #000000">[CLIENTS_ID_GEN] se utilizará para generar la clave principal de la tabla [CLIENTS];</span></li>
-<li><span style="color: #000000">[MEDECINS_ID_GEN] se utilizará para generar la clave principal de la tabla [MEDECINS];</span></li>
-<li><span style="color: #000000">[CRENEAUX_ID_GEN] se utilizará para generar la clave principal de la tabla [CRENEAUX];</span></li>
-<li><span style="color: #000000">[RVS_ID_GEN] se utilizará para generar la clave principal de la tabla [RVS];</span></li>
-<li><span style="color: #000000">[VERSIONS_GEN] se utilizará para generar los valores de las columnas [VERSIONING] en todas las tablas.</span></li>
-</ul>
-<p><u><strong><span style="color: #000000">Desencadenadores</span></strong></u></p>
-<p><span style="color: #000000">Un disparador es un procedimiento ejecutado por el SGBD antes o después de un evento (Insert, Update, Delete) en una tabla. Tenemos 8 de ellos [1]:</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002260000013EAF13000E.png" width="275" height="159" style="display:inline-block; margin:4px;width:7.276cm;height:4.207cm;" class="odt-zoomable" data-zoom-src="images/10000000000002260000013EAF13000E.png" /></td></tr></table>
+<ol>
+  <li><span style="color: #000000">[CLIENTS_ID_GEN] se utilizará para generar la clave primaria de la tabla [CLIENTS];</span>
+  </li>
+  <li><span style="color: #000000">[MEDECINS_ID_GEN] se utilizará para generar la clave primaria de la tabla [MEDECINS];</span>
+  </li>
+  <li><span style="color: #000000">[CRENEAUX_ID_GEN] se utilizará para generar la clave primaria de la tabla [CRENEAUX];</span>
+  </li>
+  <li><span style="color: #000000">[RVS_ID_GEN] se utilizará para generar la clave primaria de la tabla [RVS];</span>
+  </li>
+  <li><span style="color: #000000">[VERSIONS_GEN] se utilizará para generar los valores de las columnas [VERSIONING] de todas las tablas.</span>
+  </li>
+</ol>
 
-<p><span style="color: #000000">Veamos el código DDL del disparador [BI_CLIENTS_ID], que rellena la columna [ID] de la tabla [CLIENTS]:</span></p>
+<p><u><strong><span style="color: #000000">Los disparadores</span></strong></u></p>
+<p><span style="color: #000000">Un disparador es un procedimiento ejecutado por SGBD antes o después de un evento (Inserción, Modificación, Eliminación) en una tabla. Tenemos 8: [1]:</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000002260000013EAF13000E.png" width="275" height="159" style="display:inline-block; margin:4px;width:7.276cm;height:4.207cm;" class="odt-zoomable" data-zoom-src="images/10000000000002260000013EAF13000E.png" /></td></tr></table>
+
+<p><span style="color: #000000">Veamos el código DDL del disparador [BI_CLIENTS_ID] que alimenta la columna [ID] de la tabla [CLIENTS]:</span></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
 <span class="normal"><a href="#__codelineno-2-2">2</a></span>
 <span class="normal"><a href="#__codelineno-2-3">3</a></span>
@@ -828,21 +873,24 @@
 <span class="normal"><a href="#__codelineno-2-5">5</a></span>
 <span class="normal"><a href="#__codelineno-2-6">6</a></span>
 <span class="normal"><a href="#__codelineno-2-7">7</a></span>
-<span class="normal"><a href="#__codelineno-2-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TRIGGER</span><span class="w"> </span><span class="n">BI_CLIENTS_ID</span><span class="w"> </span><span class="k">FOR</span><span class="w"> </span><span class="n">CLIENTS</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="n">ACTIVE</span><span class="w"> </span><span class="k">BEFORE</span><span class="w"> </span><span class="k">INSERT</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="k">POSITION</span><span class="w"> </span><span class="mi">0</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="k">AS</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="k">BEGIN</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="w">  </span><span class="k">IF</span><span class="w"> </span><span class="p">(</span><span class="k">NEW</span><span class="p">.</span><span class="n">ID</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NULL</span><span class="p">)</span><span class="w"> </span><span class="k">THEN</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="w">      </span><span class="k">NEW</span><span class="p">.</span><span class="n">ID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GEN_ID</span><span class="p">(</span><span class="n">CLIENTS_ID_GEN</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="k">END</span><span class="o">^</span>
+<span class="normal"><a href="#__codelineno-2-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>CREATE TRIGGER BI_CLIENTS_ID FOR CLIENTS
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>ACTIVE BEFORE INSERT
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a>POSITION 0
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>AS
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a>BEGIN
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a>  IF (NEW.ID IS NULL) THEN
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a>      NEW.ID = GEN_ID(CLIENTS_ID_GEN, 1);
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a>END^
 </code></pre></div></td></tr></table></div>
-<ul>
-<li><span style="color: #000000">Línea 2: Antes de cada inserción en la tabla [CLIENTS];</span></li>
-<li><span style="color: #000000">líneas 6-7: si la columna ID es NULL, entonces asígnale el siguiente valor del generador de números [CLIENTS_ID_GEN].</span></li>
-</ul>
-<p><span style="color: #000000">Los desencadenadores [BI_CLIENTS_ID, BI_MEDECINS_ID, BI_CRENEAUX_ID, BI_RVS_ID] se construyen todos de la misma manera.</span></p>
-<p><span style="color: #000000">Veamos ahora el código DDL del disparador [CLIENTS_VERSION_TRIGGER], que rellena la columna [VERSIONING] de la tabla [CLIENTS]:</span></p>
+<ol>
+  <li><span style="color: #000000">línea 2: antes de cada inserción en la tabla [CLIENTS];</span>
+  </li>
+  <li><span style="color: #000000">líneas 6-7: si la columna ID es NULL, entonces se le asigna el siguiente valor del generador de números [CLIENTS_ID_GEN].</span>
+  </li>
+</ol>
+
+<p><span style="color: #000000">Los triggers [ BI_CLIENTS_ID, BI_MEDECINS_ID, BI_CRENEAUX_ID, BI_RVS_ID]    están todos construidos de la misma manera.</span></p>
+<p><span style="color: #000000">Veamos ahora el código DDL del disparador [CLIENTS_VERSION_TRIGGER] que alimenta la columna [VERSIONING] de la tabla [CLIENTS]:</span></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
 <span class="normal"><a href="#__codelineno-3-2">2</a></span>
 <span class="normal"><a href="#__codelineno-3-3">3</a></span>
@@ -857,61 +905,76 @@
 <a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="w">  </span><span class="k">NEW</span><span class="p">.</span><span class="ss">&quot;VERSIONING&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GEN_ID</span><span class="p">(</span><span class="n">VERSIONS_GEN</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
 <a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="k">END</span><span class="o">^</span>
 </code></pre></div></td></tr></table></div>
-<ul>
-<li><span style="color: #000000">Líneas 1–3: Antes de cada operación INSERT o UPDATE en la tabla [CLIENTS];</span></li>
-<li><span style="color: #000000">línea 6: la columna [&quot;VERSIONING&quot;] recibe el siguiente valor del generador de números [VERSIONS_GEN]. Este generador rellena las columnas [&quot;VERSIONING&quot;] de las cuatro tablas.</span></li>
-</ul>
-<p><span style="color: #000000">Los desencadenadores [MEDECINS_VERSION_TRIGGER, CRENEAUX_VERSION_TRIGGER, RVS_VERSION_TRIGGER] son similares.</span></p>
-<p><span style="color: #000000">El script para generar las tablas en la base de datos Firebird [RDVMEDECINS-EF] se ha colocado en la carpeta [RdvMedecins / databases / Firebird]. El lector puede cargarlo y ejecutarlo para crear las tablas.</span></p>
-<p><span style="color: #000000">Una vez hecho esto, se pueden ejecutar los distintos programas del proyecto. Estos producen los mismos resultados que con SQL Server, excepto el programa [ModifyDetachedEntities], que se bloquea por la misma razón por la que se bloqueaba con Oracle y MySQL. El problema se resuelve de la misma manera. Basta con copiar el programa [ModifyDetachedEntities] del proyecto [RdvMedecins-Oracle-01] al proyecto [RdvMedecins-Firebird-01].</span></p>
-<p><a id="refheading39829804107930"></a></p>
+<ol>
+  <li><span style="color: #000000">líneas 1-3: antes de cada operación INSERT o UPDATE en la tabla [CLIENTS];</span>
+  </li>
+  <li><span style="color: #000000">línea 6: la columna [&quot;VERSIONING&quot;] recibe el siguiente valor del generador de números [VERSIONS_GEN]. Este generador alimenta las columnas [&quot;VERSIONING&quot;] de las cuatro tablas.</span>
+  </li>
+</ol>
+
+<p><span style="color: #000000">Los disparadores [MEDECINS_VERSION_TRIGGER, CRENEAUX_VERSION_TRIGGER, RVS_VERSION_TRIGGER] son análogos.</span></p>
+<p><span style="color: #000000">El script de generación de las tablas de la base de datos Firebird [RDVMEDECINS-EF] se ha colocado en la carpeta [RdvMedecins / databases / Firebird]. El lector podrá cargarlo y ejecutarlo para crear sus tablas.</span></p>
+<p><span style="color: #000000">Una vez hecho esto, se pueden ejecutar los diferentes programas del proyecto. Dan los mismos resultados que con SQL Server, salvo el programa [ModifyDetachedEntities], que se cuelga por la misma razón por la que se colgaba con Oracle y MySQL. El problema se resuelve de la misma manera. Basta con copiar el programa [ModifyDetachedEntities] del proyecto [RdvMedecins-Oracle-01] al proyecto [RdvMedecins-Firebird-01].</span></p>
+<p><span id="refheading39829804107930" name="refheading39829804107930" class="odt-bookmark-anchor"></span></p>
 <h2 id="73-arquitectura-multicapa-basada-en-ef-5">7.3. <span style="color: #4f81bd">Arquitectura multicapa basada en EF 5</span></h2>
-<p><span style="color: #000000">Volvemos al caso práctico descrito en </span><a href="#etude-de-cas"><u><span style="color: #0563c1">el párrafo 2</span></u></a><span style="color: #000000">.</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005E80000012562EE9C27.png" width="680" height="132" style="display:inline-block; margin:4px;width:17.999cm;height:3.487cm;" class="odt-zoomable" data-zoom-src="images/10000000000005E80000012562EE9C27.png" /></td></tr></table>
+<p><span style="color: #000000">Volvemos a nuestro caso práctico descrito en el apartado</span><a href="el--estudio-de-caso.html#etude-de-cas"><u><span style="color: #0563c1"> 2</span></u></a><span style="color: #000000">.</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005E80000012562EE9C27.png" width="680" height="132" style="display:inline-block; margin:4px;width:17.999cm;height:3.487cm;" class="odt-zoomable" data-zoom-src="images/10000000000005E80000012562EE9C27.png" /></td></tr></table>
 
-<p><span style="color: #000000">Comenzaremos por crear la capa de acceso a datos [DAO]. Para ello, duplicamos el proyecto de consola de VS 2012 [RdvMedecins-SqlServer-02] en [RdvMedecins-Firebird-02] [1]:</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005B9000003027D45252E.png" width="680" height="358" style="display:inline-block; margin:4px;width:17.999cm;height:9.46cm;" class="odt-zoomable" data-zoom-src="images/10000000000005B9000003027D45252E.png" /></td></tr></table>
-
-<ul>
-<li><span style="color: #000000">en [2], eliminamos el proyecto [RdvMedecins-SqlServer-02];</span></li>
-</ul>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005EA00000220B54D5B33.png" width="680" height="244" style="display:inline-block; margin:4px;width:17.999cm;height:6.466cm;" class="odt-zoomable" data-zoom-src="images/10000000000005EA00000220B54D5B33.png" /></td></tr></table>
+<p><span style="color: #000000">Comenzaremos por construir la capa [DAO] de acceso a los datos. Para ello, duplicamos el proyecto de consola VS 2012 [RdvMedecins-SqlServer-02] en [RdvMedecins-Firebird-02] [1]:</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005B9000003027D45252E.png" width="680" height="358" style="display:inline-block; margin:4px;width:17.999cm;height:9.46cm;" class="odt-zoomable" data-zoom-src="images/10000000000005B9000003027D45252E.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">En [3], añadimos un proyecto existente a la solución. Lo tomamos de la carpeta [RdvMedecins-Firebird-02] que acabamos de crear;</span></li>
-<li><span style="color: #000000">en [4], el nuevo proyecto tiene el mismo nombre que el que se ha eliminado. Vamos a cambiarle el nombre;</span></li>
+  <li><span style="color: #000000">en [2], eliminamos el proyecto [RdvMedecins-SqlServer-02];</span>
+  </li>
 </ul>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006300000014C028DE9A6.png" width="680" height="143" style="display:inline-block; margin:4px;width:17.999cm;height:3.773cm;" class="odt-zoomable" data-zoom-src="images/10000000000006300000014C028DE9A6.png" /></td></tr></table>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005EA00000220B54D5B33.png" width="680" height="244" style="display:inline-block; margin:4px;width:17.999cm;height:6.466cm;" class="odt-zoomable" data-zoom-src="images/10000000000005EA00000220B54D5B33.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">En [5], hemos cambiado el nombre del proyecto;</span></li>
-<li><span style="color: #000000">En [6], modificamos algunas de sus propiedades, como el nombre del ensamblaje;</span></li>
-<li><span style="color: #000000">en [7], se elimina la carpeta [Models] y se sustituye por la carpeta [Models] del proyecto [RdvMedecins-Firebird-01]. Esto se debe a que ambos proyectos comparten los mismos modelos.</span></li>
+  <li><span style="color: #000000">en [3], se añade un proyecto existente a la solución. Se toma de la carpeta [RdvMedecins-Firebird-02] que se acaba de crear;</span>
+  </li>
+  <li><span style="color: #000000">en [4], el nuevo proyecto lleva el nombre del que se ha eliminado. Vamos a cambiarle el nombre;</span>
+  </li>
 </ul>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000032400000144B71DEA87.png" width="402" height="162" style="display:inline-block; margin:4px;width:10.636cm;height:4.286cm;" class="odt-zoomable" data-zoom-src="images/100000000000032400000144B71DEA87.png" /></td></tr></table>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000006300000014C028DE9A6.png" width="680" height="143" style="display:inline-block; margin:4px;width:17.999cm;height:3.773cm;" class="odt-zoomable" data-zoom-src="images/10000000000006300000014C028DE9A6.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">en [8], las referencias actuales del proyecto;</span></li>
-<li><span style="color: #000000">En [9], se ha añadido el conector Firebird ADO.NET mediante la herramienta NuGet.</span></li>
+  <li><span style="color: #000000">en [5], hemos cambiado el nombre del proyecto;</span>
+  </li>
+  <li><span style="color: #000000">en [6], modificamos algunas de sus propiedades, como en este caso el nombre del ensamblado;</span>
+  </li>
+  <li><span style="color: #000000">en [7], se elimina la carpeta [Models] para sustituirla por la carpeta [Models] del proyecto [RdvMedecins-Firebird-01]. De hecho, ambos proyectos comparten las mismas plantillas.</span>
+  </li>
 </ul>
-<p><span style="color: #000000">En el archivo [App.config], sustituya la información de la base de datos de SQL Server por la de la base de datos Firebird. Esta información se encuentra en el archivo [App.config] del proyecto [RdvMedecins-Firebird-01]:</span></p>
-<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
-<span class="odt-code-line"><span class="odt-code-line-content">&lt;!-- connection chain on base --&gt;</span></span>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000032400000144B71DEA87.png" width="402" height="162" style="display:inline-block; margin:4px;width:10.636cm;height:4.286cm;" class="odt-zoomable" data-zoom-src="images/100000000000032400000144B71DEA87.png" /></td></tr></table>
+
+<ul>
+  <li><span style="color: #000000">en [8], las referencias actuales del proyecto;</span>
+  </li>
+  <li><span style="color: #000000">en [9], se ha añadido el conector ADO.NET de Firebird con la herramienta NuGet.</span>
+  </li>
+</ul>
+
+<p><span style="color: #000000">En el archivo [App.config], se sustituye la información de la base SQL Server por la de la base Firebird. Se encuentra en el archivo [App.config] del proyecto [RdvMedecins-Firebird-01]:</span></p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;!-- cadena de conexión en la base --&gt;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">  &lt;</span><span style="color:#a31515">connectionStrings</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">    &lt;</span><span style="color:#a31515">add</span><span style="color:#0000ff"> </span><span style="color:#ff0000">name</span><span style="color:#0000ff">=</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">monContexte</span><span style="color:#000000">&quot;</span><span style="color:#0000ff"> </span><span style="color:#ff0000">connectionString</span><span style="color:#0000ff">=</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">User=SYSDBA;Password=masterkey;Database=D:\data\istia-1213\c#\dvp\Entity Framework\databases\firebird\RDVMEDECINS-EF.GDB;DataSource=localhost;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=15;Pooling=true;MinPoolSize=0;MaxPoolSize=50;Packet Size=8192;ServerType=0;</span><span style="color:#000000">&quot;</span><span style="color:#0000ff"> </span><span style="color:#ff0000">providerName</span><span style="color:#0000ff">=</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">FirebirdSql.Data.FirebirdClient</span><span style="color:#000000">&quot;</span><span style="color:#0000ff"> /&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">  &lt;/</span><span style="color:#a31515">connectionStrings</span><span style="color:#0000ff">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#0000ff">&lt;!-- the factory provider --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#0000ff">&lt;!-- el proveedor de la fábrica --&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">  &lt;</span><span style="color:#a31515">system.data</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">    &lt;</span><span style="color:#a31515">DbProviderFactories</span><span style="color:#0000ff">&gt;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">      &lt;</span><span style="color:#a31515">add</span><span style="color:#0000ff"> </span><span style="color:#ff0000">name</span><span style="color:#0000ff">=</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">Firebird Client Data Provider</span><span style="color:#000000">&quot;</span><span style="color:#0000ff"> </span><span style="color:#ff0000">invariant</span><span style="color:#0000ff">=</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">FirebirdSql.Data.FirebirdClient</span><span style="color:#000000">&quot;</span><span style="color:#0000ff"> </span><span style="color:#ff0000">description</span><span style="color:#0000ff">=</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">.Net Framework Data Provider for Firebird</span><span style="color:#000000">&quot;</span><span style="color:#0000ff"> </span><span style="color:#ff0000">type</span><span style="color:#0000ff">=</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">FirebirdSql.Data.FirebirdClient.FirebirdClientFactory, FirebirdSql.Data.FirebirdClient, Version=2.7.7.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c</span><span style="color:#000000">&quot;</span><span style="color:#0000ff"> /&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">      &lt;</span><span style="color:#a31515">add</span><span style="color:#0000ff"> </span><span style="color:#ff0000">name</span><span style="color:#0000ff">=</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">Firebird Client Data Provider</span><span style="color:#000000">&quot;</span><span style="color:#0000ff"> </span><span style="color:#ff0000">invariant</span><span style="color:#0000ff">=</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">FirebirdSql.Data.FirebirdClient</span><span style="color:#000000">&quot;</span><span style="color:#0000ff"> </span><span style="color:#ff0000">description</span><span style="color:#0000ff">=</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">.Net Framework </span><span style="color:#0000ff">Data Provider for Firebird</span><span style="color:#000000">&quot;</span><span style="color:#0000ff"> </span><span style="color:#ff0000">type</span><span style="color:#0000ff">=</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">FirebirdSql.Data.FirebirdClient.FirebirdClientFactory, FirebirdSql.Data.FirebirdClient, Version=2.7.7.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c</span><span style="color:#000000">&quot;</span><span style="color:#0000ff"> /&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">    &lt;/</span><span style="color:#a31515">DbProviderFactories</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">  &lt;/</span><span style="color:#a31515">system.data</span><span style="color:#0000ff">&gt;</span></span></span>
 </code></pre></div>
 
 <p><span style="color: #000000">Los objetos gestionados por Spring también cambian. Actualmente tenemos:</span></p>
-<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#0000ff">&lt;!-- spring configuration --&gt;</span></span></span>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#0000ff">&lt;!-- configuración de muelles --&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">  &lt;</span><span style="color:#a31515">spring</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">    &lt;</span><span style="color:#a31515">context</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">      &lt;</span><span style="color:#a31515">resource</span><span style="color:#0000ff"> </span><span style="color:#ff0000">uri</span><span style="color:#0000ff">=</span><span style="color:#000000">&quot;</span><span style="color:#0000ff">config://spring/objects</span><span style="color:#000000">&quot;</span><span style="color:#0000ff"> /&gt;</span></span></span>
@@ -922,29 +985,36 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;/</span><span style="color:#a31515">spring</span><span style="color:#0000ff">&gt;</span></span></span>
 </code></pre></div>
 
-<p><span style="color: #000000">La línea 7 hace referencia al ensamblado del proyecto [</span><span style="color: #0000ff">RdvMedecins-SqlServer-02</span><span style="color: #000000">]. El ensamblado es ahora [</span><span style="color: #0000ff">RdvMedecins-Firebird-02</span><span style="color: #000000">].</span></p>
-<p><span style="color: #000000">Una vez hecho esto, estamos listos para ejecutar la prueba de la capa [DAO]. En primer lugar, debemos asegurarnos de que la base de datos está poblada (utilizando el programa [Fill] del proyecto [</span><span style="color: #0000ff">RdvMedecins-Firebird-01</span><span style="color: #000000">]). El programa de prueba se ejecuta correctamente.</span></p>
-<p><span style="color: #000000">Creamos la DLL del proyecto tal y como hicimos para el proyecto [</span><span style="color: #0000ff">RdvMedecins-SqlServer-02</span><span style="color: #000000">] y reunimos todas las DLL del proyecto en una carpeta [lib] creada en [</span><span style="color: #0000ff">RdvMedecins-Firebird-02</span><span style="color: #000000">]. Estas serán las referencias para el proyecto web [</span><span style="color: #0000ff">RdvMedecins-Firebird-03</span><span style="color: #000000">] que viene a continuación.</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000DA000000D5F852DD2B.png" width="153" height="149" style="display:inline-block; margin:4px;width:4.039cm;height:3.946cm;" class="odt-zoomable" data-zoom-src="images/10000000000000DA000000D5F852DD2B.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+<p><span style="color: #000000">La línea 7 hace referencia al ensamblado del proyecto [RdvMedecins-SqlServer-02]. El ensamblado es ahora [RdvMedecins-Firebird-02].</span></p>
+<p><span style="color: #000000">Una vez hecho esto, estamos listos para ejecutar la prueba de la capa [DAO]. Antes hay que asegurarse de rellenar la base de datos (programa [Fill] del proyecto [RdvMedecins-Firebird-01]). La prueba se supera.</span></p>
+<p><span style="color: #000000">Creamos el DLL del proyecto tal y como se hizo para el proyecto [RdvMedecins-SqlServer-02] y reunimos elconjunto de DLL del proyecto en una carpeta [lib] creada en [RdvMedecins-Firebird-02]. Estas serán las referencias del proyecto web [RdvMedecins-Firebird-03] que vendrá a continuación.</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000000DA000000D5F852DD2B.png" width="153" height="149" style="display:inline-block; margin:4px;width:4.039cm;height:3.946cm;" class="odt-zoomable" data-zoom-src="images/10000000000000DA000000D5F852DD2B.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
 
-<p><span style="color: #000000">Ya estamos listos para crear la capa [ASP.NET] de nuestra aplicación:</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005DB000001252F581312.png" width="680" height="133" style="display:inline-block; margin:4px;width:17.999cm;height:3.517cm;" class="odt-zoomable" data-zoom-src="images/10000000000005DB000001252F581312.png" /></td></tr></table>
+<p><span style="color: #000000">Ahora estamos listos para construir la capa [ASP.NET] de nuestra aplicación:</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005DB000001252F581312.png" width="680" height="133" style="display:inline-block; margin:4px;width:17.999cm;height:3.517cm;" class="odt-zoomable" data-zoom-src="images/10000000000005DB000001252F581312.png" /></td></tr></table>
 
-<p><span style="color: #000000">Comenzaremos con el proyecto [RdvMedecins-SqlServer-03]. Duplicaremos esta carpeta del proyecto en [RdvMedecins-Firebird-03] [1]:</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005BD000002CF57C5F3F6.png" width="680" height="333" style="display:inline-block; margin:4px;width:17.999cm;height:8.811cm;" class="odt-zoomable" data-zoom-src="images/10000000000005BD000002CF57C5F3F6.png" /></td></tr></table>
+<p><span style="color: #000000">Partiremos del proyecto [RdvMedecins-SqlServer-03]. Duplicamos la carpeta de este proyecto en [RdvMedecins-Firebird-03] [1]:</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005BD000002CF57C5F3F6.png" width="680" height="333" style="display:inline-block; margin:4px;width:17.999cm;height:8.811cm;" class="odt-zoomable" data-zoom-src="images/10000000000005BD000002CF57C5F3F6.png" /></td></tr></table>
 
-<ul>
-<li><span style="color: #000000">en [2], utilizando VS 2012 Express for the Web, abrimos la solución en la carpeta [RdvMedecins-Firebird-03];</span></li>
-<li><span style="color: #000000">en [3], cambiamos tanto el nombre de la solución como el del proyecto;</span></li>
-</ul>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000061C00000187D37548BA.png" width="680" height="170" style="display:inline-block; margin:4px;width:17.999cm;height:4.5cm;" class="odt-zoomable" data-zoom-src="images/100000000000061C00000187D37548BA.png" /></td></tr></table>
+<ol>
+  <li><span style="color: #000000">en [2], con VS 2012 Express para la web, abrimos la solución de la carpeta [RdvMedecins-Firebird-03];</span>
+  </li>
+  <li><span style="color: #000000">en [3], cambiamos tanto el nombre de la solución como el del proyecto;</span>
+  </li>
+</ol>
 
-<ul>
-<li><span style="color: #000000">en [4], las referencias actuales del proyecto;</span></li>
-<li><span style="color: #000000">en [5], las eliminamos;</span></li>
-<li><span style="color: #000000">en [6], para sustituirlas por referencias a las DLL que acabamos de guardar en una carpeta [lib] dentro del proyecto [RdvMedecins-Firebird-02].</span></li>
-</ul>
-<p><span style="color: #000000">Solo queda modificar el archivo [Web.config]. Sustituimos su contenido actual por el contenido del archivo [App.config] del proyecto [RdvMedecins-Firebird-02]. Una vez hecho esto, ejecutamos el proyecto web. Funciona. No olvides rellenar la base de datos antes de ejecutar la aplicación web.</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000061C00000187D37548BA.png" width="680" height="170" style="display:inline-block; margin:4px;width:17.999cm;height:4.5cm;" class="odt-zoomable" data-zoom-src="images/100000000000061C00000187D37548BA.png" /></td></tr></table>
+
+<ol>
+  <li><span style="color: #000000">en [4], las referencias actuales del proyecto;</span>
+  </li>
+  <li><span style="color: #000000">en [5], las eliminamos;</span>
+  </li>
+  <li><span style="color: #000000">en [6], para sustituirlas por referencias a DLL que acabamos de guardar en una carpeta [lib] del proyecto [RdvMedecins-Firebird-02].</span>
+  </li>
+</ol>
+
+<p><span style="color: #000000">Ahora solo nos queda modificar el archivo [Web.config]. Sustituimos su contenido actual por el contenido del archivo [App.config] del proyecto [RdvMedecins-Firebird-02]. Una vez hecho esto, ejecutamos el proyecto web. Funciona. No olvidemos rellenar la base de datos antes de ejecutar la aplicación web.</span></p>
 
 
 

@@ -55,6 +55,8 @@
     
       <link rel="stylesheet" href="stylesheets/focus.css">
     
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -328,14 +330,14 @@
   
   
     <li class="md-nav__item">
-      <a href="--un-caso-practico.html" class="md-nav__link">
+      <a href="el--estudio-de-caso.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    2.  : un caso práctico
+    2. El : estudio de caso
   
 
     
@@ -355,14 +357,14 @@
   
   
     <li class="md-nav__item">
-      <a href="estudio-de-caso-con-sql-server-express-2012.html" class="md-nav__link">
+      <a href="caso-practico-con-sql-server-express-2012.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    3. Estudio de caso con SQL Server Express 2012
+    3. Caso práctico con SQL Server Express 2012
   
 
     
@@ -436,14 +438,14 @@
   
   
     <li class="md-nav__item">
-      <a href="caso-practico-con-postgresql-921.html" class="md-nav__link">
+      <a href="caso-practico-con--postgresql-921.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    6. Caso práctico con PostgreSQL 9.2.1
+    6. Caso práctico con  PostgreSQL 9.2.1
   
 
     
@@ -540,20 +542,23 @@
   
 
 
-<p><a id="refheading39831804107930"></a></p>
+<p><span id="refheading39831804107930" name="refheading39831804107930" class="odt-bookmark-anchor"></span></p>
 <h1 id="8-conclusion">8. <span style="color: #365f91">Conclusión</span></h1>
-<p><span style="color: #000000">En este documento, primero hemos explorado Entity Framework 5 Code First (EF 5). A continuación, hemos portado la siguiente aplicación, que utilizaba el ORM NHibernate:</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005EA00000115D91908D8.png" width="680" height="124" style="display:inline-block; margin:4px;width:17.999cm;height:3.293cm;" class="odt-zoomable" data-zoom-src="images/10000000000005EA00000115D91908D8.png" /></td></tr></table>
+<p><span style="color: #000000">En este documento, hemos descubierto en primer lugar Entity Framework 5 Código First (EF 5). A continuación, hemos portado la siguiente aplicación que utilizaba el ORM NHibernate:</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005EA00000115D91908D8.png" width="680" height="124" style="display:inline-block; margin:4px;width:17.999cm;height:3.293cm;" class="odt-zoomable" data-zoom-src="images/10000000000005EA00000115D91908D8.png" /></td></tr></table>
 
-<p>a la siguiente arquitectura, que utiliza el ORM de EF 5:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005E50000011F327B2216.png" width="680" height="129" style="display:inline-block; margin:4px;width:17.999cm;height:3.424cm;" class="odt-zoomable" data-zoom-src="images/10000000000005E50000011F327B2216.png" /></td></tr></table>
+<p>a la siguiente arquitectura que utiliza ORM EF 5:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005E50000011F327B2216.png" width="680" height="129" style="display:inline-block; margin:4px;width:17.999cm;height:3.424cm;" class="odt-zoomable" data-zoom-src="images/10000000000005E50000011F327B2216.png" /></td></tr></table>
 
-<p>Desarrollamos esta última arquitectura utilizando cinco sistemas de gestión de bases de datos (SGBD). Aunque la portabilidad entre SGBD no siempre fue del 100 %, resultó, no obstante, extremadamente satisfactoria. </p>
-<p>Aprendimos algunos principios:</p>
+<p>Hemos construido esta última arquitectura con cinco SGBD. Aunque la portabilidad entre SGBD no ha sido siempre del 100 %, ha resultado, no obstante, extremadamente satisfactoria. </p>
+<p>Hemos aprendido algunos principios:</p>
 <ul>
-<li>todos los SGBD estudiados disponen de una solución para generar automáticamente valores de clave primaria;</li>
-<li>para gestionar el acceso simultáneo a las entidades de la base de datos, parece que una columna de tipo entero incrementada automáticamente por disparadores es una solución aceptada por todos;</li>
-<li>en el modo de carga diferida, es importante que las entidades encapsulen los valores de clave externa asociados a ellas. Esto permite entonces recuperar las dependencias de la entidad de la base de datos.</li>
+  <li>todos los SGBD estudiados cuentan con una solución para generar automáticamente los valores de las claves primarias;
+  </li>
+  <li>para gestionar la concurrencia de acceso a las entidades en la base de datos, parece que una columna de tipo entero incrementada automáticamente por triggers es una solución aceptada por todos;
+  </li>
+  <li>cuando se está en modo Lazy Loading, es importante que las entidades encapsulen los valores de las claves externas que les están vinculadas. Esto permite luego buscar en la base de datos las dependencias de la entidad.
+  </li>
 </ul>
 
 
