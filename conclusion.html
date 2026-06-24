@@ -330,14 +330,14 @@
   
   
     <li class="md-nav__item">
-      <a href="el--estudio-de-caso.html" class="md-nav__link">
+      <a href="--caso-practico.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    2. El : estudio de caso
+    2.  : caso práctico
   
 
     
@@ -411,14 +411,14 @@
   
   
     <li class="md-nav__item">
-      <a href="caso-practico-con-oracle-database-express-edition-11g-release-2.html" class="md-nav__link">
+      <a href="caso-practico-con-oracle-database-express-edition-11g-version-2.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    5. Caso práctico con Oracle Database Express Edition 11g Release 2
+    5. Caso práctico con Oracle Database Express Edition 11g Versión 2
   
 
     
@@ -544,21 +544,18 @@
 
 <p><span id="refheading39831804107930" name="refheading39831804107930" class="odt-bookmark-anchor"></span></p>
 <h1 id="8-conclusion">8. <span style="color: #365f91">Conclusión</span></h1>
-<p><span style="color: #000000">En este documento, hemos descubierto en primer lugar Entity Framework 5 Código First (EF 5). A continuación, hemos portado la siguiente aplicación que utilizaba el ORM NHibernate:</span></p>
+<p><span style="color: #000000">En este documento, hemos descubierto en primer lugar Entity Framework 5 Code First (EF 5). A continuación, hemos portado la siguiente aplicación que utilizaba ORM y NHibernate:</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005EA00000115D91908D8.png" width="680" height="124" style="display:inline-block; margin:4px;width:17.999cm;height:3.293cm;" class="odt-zoomable" data-zoom-src="images/10000000000005EA00000115D91908D8.png" /></td></tr></table>
 
-<p>a la siguiente arquitectura que utiliza ORM EF 5:</p>
+<p>a la siguiente arquitectura, que utiliza ORM EF 5:</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005E50000011F327B2216.png" width="680" height="129" style="display:inline-block; margin:4px;width:17.999cm;height:3.424cm;" class="odt-zoomable" data-zoom-src="images/10000000000005E50000011F327B2216.png" /></td></tr></table>
 
-<p>Hemos construido esta última arquitectura con cinco SGBD. Aunque la portabilidad entre SGBD no ha sido siempre del 100 %, ha resultado, no obstante, extremadamente satisfactoria. </p>
+<p>Hemos construido esta última arquitectura con cinco SGBD. Aunque la portabilidad entre SGBD no ha sido siempre del 100 %, sí ha resultado extremadamente satisfactoria. </p>
 <p>Hemos aprendido algunos principios:</p>
 <ul>
-  <li>todos los SGBD estudiados cuentan con una solución para generar automáticamente los valores de las claves primarias;
-  </li>
-  <li>para gestionar la concurrencia de acceso a las entidades en la base de datos, parece que una columna de tipo entero incrementada automáticamente por triggers es una solución aceptada por todos;
-  </li>
-  <li>cuando se está en modo Lazy Loading, es importante que las entidades encapsulen los valores de las claves externas que les están vinculadas. Esto permite luego buscar en la base de datos las dependencias de la entidad.
-  </li>
+<li>todos los SGBD analizados cuentan con una solución para generar automáticamente los valores de las claves primarias;</li>
+<li>para gestionar la concurrencia en el acceso a las entidades de la base de datos, parece que una columna de tipo entero incrementada automáticamente mediante triggers es una solución aceptada por todos;</li>
+<li>cuando se está en modo «Lazy Loading», es importante que las entidades encapsulen los valores de las claves externas a las que están vinculadas. Esto permite, posteriormente, recuperar de la base de datos las dependencias de la entidad.</li>
 </ul>
 
 
